@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    a.navbar-brand {
+        /*just for commerce bank logo / site title*/
+        white-space: normal;
+        text-align: center;
+        word-break: break-all;
+    }
+    
+    /* a bit of contrast against white background */
+    a {
+        /* hyperlinks */
+      color: #007aa3;
+    }
+    
+    a:hover {
+        /* underlines for navigation bar*/
+            text-decoration: underline !important;
+            text-decoration-color: #ffb300 !important;
+            text-decoration-thickness: 50%;
+    }
+    
+    header{
+        background-color: #007aa3 !important;
+    }
+    
+    .btn-primary {
+        color: #fff;
+        background-color: #006747;
+        border-color: #006747;
+    }
+    
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        color: #fff;
+        background-color: #006747;
+        border-color: #006747;
+    }
+    ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #006747;
+    }
+     
+    li {
+     float: left;
+    }
+     
+    li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+    }
+     
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+     background-color: #4fa800;
+    
+    /* footer styles
+    -------------------------------------------------- */
+    html {
+      font-size: 15px;
+    }
+    @media (min-width: 768px) {
+      html {
+        font-size: 18px;
+      }
+    }
+    
+    /*color for footer*/
+    .border-top {
+        border-top: 1px solid #e5e5e5;
+        background-color: #006747;
+        color: white !important;
+    }
+    .border-bottom {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    
+    .box-shadow {
+      box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    }
+    
+    button.accept-policy {
+      font-size: 1rem;
+      line-height: inherit;
+    }
+    
+    /* footer styles
+    -------------------------------------------------- */
+    html {
+      position: relative;
+      min-height: 100%;
+    }
+    
+    body {
+      /* footer height bottom margin*/
+      margin-bottom: 60px;
+      background-color:#fff;
+      font-family: OpenSans;
+    }
+    
+    /*Heading fonts*/
+    h1 {
+        font-family: Poppins;
+    }
+    
+    /* open-sans-regular */
+    @font-face {
+        font-family: 'OpenSans';
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/open-sans-v18-latin-regular.eot'); /* IE9 Compat Modes */
+        src: local(''), url('../fonts/open-sans-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/open-sans-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/open-sans-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/open-sans-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/open-sans-v18-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+    }
+    
+    
+    @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/poppins-v15-latin-regular.eot'); /* IE9 Compat Modes */
+        src: local(''), url('../fonts/poppins-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/poppins-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/poppins-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/poppins-v15-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+    }
+    
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      white-space: nowrap;
+      line-height: 60px; /* Vertically center the text there */
+    }
+    
+    
+</html>
