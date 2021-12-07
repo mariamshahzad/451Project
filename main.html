@@ -1,0 +1,76 @@
+<!DOCTYPE
+<html>
+<head>
+    <link rel="stylesheet" href="assignment8.css">
+
+        
+  <title>Welcome To Commerce Bank</title>
+  <div class="imgcontainer">
+      <style>
+          img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          </style>
+          </head>
+          <body>
+          
+
+          
+          <img src="unnamed.png" alt="Paris" style="width:20%;">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/personal_banking.css">
+	<link rel="stylesheet" type="text/css" href="css/nav_logo.css">
+	<script type="text/javascript" src="js/cookies.js"></script>
+  <script type="text/javascript" src="js/excel_login.js"></script>
+  
+	<script>
+		var row_no=getCookie("used_rows");
+		var trans;
+		function show_notification()
+		{
+			var unread_trans=0;
+			trans=user_trans_sheet.UsedRange.rows.Count;
+			for(i=2;i<=trans;i++)
+			{
+				if(user_trans_sheet.Cells(i,5).value==1)
+				{
+					unread_trans++;
+				}
+			}
+			document.getElementById("notification").innerHTML=unread_trans;
+		}
+	</script>
+</head>
+<body onload="checkCookie();setPrev_page();get_usersheet();show_notification();window.page.location.reload();" onunload="sheet_quit();">
+	<div id="wrap">
+		<div id="top">
+			<div id="display_user" style="float:right;">
+				<p id="welcome_user" style="margin-top:85px;margin-right:50px;"></p>
+			</div>
+		</div>
+		<div id="nav">
+			<div id="nav_bar">
+				<ul>
+            <li><a href="home.html" target="page">Home</a></li>
+					<li><a href="transactions.html" target="page">Transactions (<span id="notification" style="bgcolor:red;">0</span>)</a></li>
+					<li><a href="notif.html" target="page">Notifications</a></li>
+          <li><a href="myaccount.html" target="page">My Account</a></li>
+		  <li><a href="login.html" target="_blank" rel="noopener noreferrer" onclick="window.close()" ;>Logout</a></li>
+		  </a>
+				</ul>
+			</div>
+			<div id="my_account" style="float:right;">
+			</div>
+		</div>
+		<div id="show_pages">
+			<iframe src="" width=98.5% height=650px frameborder=1px name="page" style="scrolling='auto';padding:0px;"></iframe>
+		</div>
+	</div>
+	<div id="footer">
+		<hr>
+		CopyRight &copy; Commerce Bank.
+	</div>
+</body>
+</html>
